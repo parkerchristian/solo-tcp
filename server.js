@@ -4,10 +4,14 @@ const net = require('net');
 const server = net.createServer(socket => {
   console.log('client connected');
   
-  socket.on('data', data => {
-    console.log(data.toString());
-  });
-  
+
+  socket.pipe(socket);
+
+  //---- 1st way ----\\
+  // socket.on('data', data => {
+  //   console.log(data.toString());
+  // });
+
 });
 
 // can be 1050 to about 60000 for listen
