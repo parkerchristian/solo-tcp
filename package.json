@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "readStream.js",
-  "scripts": {
-    "test": "jest --verbose",
-    "test:watch": "npm run test -- --watch",
-    "start": "node lib/index.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/parkerchristian/solo-tcp.git"
