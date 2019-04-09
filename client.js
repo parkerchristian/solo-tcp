@@ -10,11 +10,9 @@ const rl = readline.createInterface({
 
 const client = net.createConnection(4367, '192.168.1.155', () => {
   console.log('i am connected');
-  // client.write('hello i am a client'); \\ first way
   
   rl.prompt();
   rl.on('line', line => {
-    // console.log(line);
     client.write(line);
     rl.prompt();
   });
